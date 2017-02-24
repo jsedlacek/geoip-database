@@ -1,6 +1,11 @@
 update: clean download
 .PHONY: update
 
+publish: update
+	npm version patch
+	git push origin head
+	npm publish
+
 download: GeoLite2-City.mmdb GeoLite2-Country.mmdb
 .PHONY: download
 
