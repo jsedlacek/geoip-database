@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-  - "7"
+- '7'
 script:
-  - git config --global user.email "sedlacek.jakub@gmail.com"
-  - git config --global user.name "Travis CI"
-  - make publish
+- git config --global user.email "sedlacek.jakub@gmail.com"
+- git config --global user.name "Travis CI"
+- git remote add upstream "https://$GH_TOKEN@github.com/jsedlacek/geoip-database"
+- make publish
 deploy:
   provider: npm
   email: sedlacek.jakub@gmail.com
@@ -13,3 +14,6 @@ deploy:
   on:
     tags: true
     repo: jsedlacek/geoip-database
+env:
+  global:
+    secure: jT5avhcdI83Td4lWtJbeWUUsD+Wa90H1ycfUR2lO3TjFdqrgqyqkokXCa1EVfthITnknF9iUT1GEwx6WBJu62ncpBt4AbdGJJfjJJSfJLoSjKiVlRXTeaT9dkIzn7C0LqWV5c9BY+4ieuyPEAiNo+EXPfi7OkQm19DPdkOo9CoD/Tc0qobGEaFvEIC1m7YlFTqLsmNqp5K1V40MMFWdw3W+LiLMBenLdt+3utN6fUdBNAoghqMbU5O9idX5W7JW5GBRvYpx9ywzAiYSxjwhvFOQBxBDK5RmmriqIPKo6PhuTcKLIVnSxcFByhQDCRDzGSqwVzhq1ZQQMTrkVzhIDwBYWJbrI6fbPAo4vLMw29poko6kw7/dbGCo7QerBARE6gP60qwGryrhY/6zUa9hp53gB/Oeu0JNOynaUgp8/U02mv/ksZ0WQ2xwbmXp2hitf8PgNXs0PJfdrvRV9bWoPG2RWb7am0sAbTZi3heS0CLMpDGklGDxF5BlTPpDn/BKI5hZ8SAoOnNhlHvDmbxYLCgKkqoXLrDAifatBLYsgJy9SHd2aOgcIfc7gtEdYWLvkIyqsDUJ6PF8X2qbGvwuxL5bpuuyrW6j5MrhFZy3ehbxHbVAtoyz0iqWp0aoN5QU0KnY25AI0z6sR2BDxqokOQ+EuEhHfvSO2166f1itvDS8=
