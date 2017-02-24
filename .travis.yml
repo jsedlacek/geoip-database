@@ -2,10 +2,7 @@ language: node_js
 node_js:
 - '7'
 script:
-- git config --global user.email "sedlacek.jakub@gmail.com"
-- git config --global user.name "Travis CI"
-- git remote add upstream "https://$GH_TOKEN@github.com/jsedlacek/geoip-database"
-- make publish
+- bash deploy.sh
 deploy:
   provider: npm
   email: sedlacek.jakub@gmail.com
