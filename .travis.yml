@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - "7"
+script:
+  - make publish
 deploy:
   provider: npm
   email: sedlacek.jakub@gmail.com
