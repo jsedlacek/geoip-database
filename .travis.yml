@@ -1,0 +1,8 @@
+deploy:
+  provider: npm
+  email: sedlacek.jakub@gmail.com
+  api_key:
+    secure: OgHWHv1+PM3/H1qz88HrWWMstAlF/MB2RuBJhaK+EAr5jB9sEisyHUzqV72J9mZ4AWA7T7tXpJYizTXGs8NJ7t3iebkTL96BONVqteLUxKxIKDBgSzxKbzPEYa+Wxtn9nw2HQiABEKeMOjCqXdWPEBaR1chWApNHyl4ybtnJ4bKAggGR4fS1g85GhU+oWix54njoh6Y46rSM+sjCZRNyYUtNiJzhZ5nrDQ6Lhb+MvARZEX+UB9HD94dx6je2dcMqcLoo00cGsC4DxqgTjUVsuL9qUWLxpcH/rlw8Zy4kl9JUH1Z8cTq9E3oumU+D2s3WDE7QkRvFWIyGQ/Fa2OlNcqEzCETAMDJu+Q6HTeN2AM2K8Qek65Dwmq1MpgRNub235rpbqkTVLmlmDGq/QKk4M9BvuMAVBRgU+F8RkC56CRERH5fBR7N5JOfuuwm8tJR4Q7SFRXBqAQaU60eWgmmlm7Bktj2r4+PhoMAPR7bXhcUaqHlLCAkssMJJXTWDUqKWuxpssGQoFEkeS0Upcq9xO+/4+RQnYmTeVhz1SMyUNudtpboWEvv5RBkqBGV1ypFy4uYXOdZ9f3Ski7QIxnW/s33N9uI1rc2F1usdvhAt8+r0jtK9Wt+qa86plxXJnbxy0VWs6uT2aQcCom5OfoblF5kkQq9xJyu6O6gOyNxhE4U=
+  on:
+    tags: true
+    repo: jsedlacek/geoip-database
