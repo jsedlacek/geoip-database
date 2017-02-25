@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/jsedlacek/geoip-database",
   "author": "Jakub Sedlacek",
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "devDependencies": {
+    "maxmind": "^2.1.0",
+    "tape": "^4.6.3"
+  }
 }

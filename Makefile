@@ -13,6 +13,10 @@ release:
 	git push origin head --tag
 .PHONY: release
 
+test:
+	node test.js
+.PHONY: test
+
 %.mmdb.gz:
 	wget http://geolite.maxmind.com/download/geoip/database/$@
 
