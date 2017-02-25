@@ -9,5 +9,10 @@
   "devDependencies": {
     "maxmind": "^2.1.0",
     "tape": "^4.6.3"
-  }
+  },
+  "files": [
+    "index.js",
+    "GeoLite2-City.mmdb",
+    "GeoLite2-Country.mmdb"
+  ]
 }
