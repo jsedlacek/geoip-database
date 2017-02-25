@@ -1,6 +1,6 @@
 {
   "name": "geoip-database",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "GeoLite2 databases packaged for npm",
   "main": "index.js",
   "repository": "https://github.com/jsedlacek/geoip-database",
