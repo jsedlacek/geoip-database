@@ -8,6 +8,10 @@ clean:
 	rm -rf GeoLite2-City.mmdb GeoLite2-Country.mmdb
 .PHONY: clean
 
+release:
+	npm version patch
+	git push origin head --tag
+
 %.mmdb.gz:
 	wget http://geolite.maxmind.com/download/geoip/database/$@
 
