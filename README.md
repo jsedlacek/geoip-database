@@ -21,3 +21,9 @@ const cityLookup = maxmind.openSync(database.city);
 const {city, country, location} = cityLookup.get('83.208.93.244');
 console.log(city.names.en); // Prague
 ```
+
+# License
+
+The GeoLite2 databases are distributed under the Creative Commons Attribution-ShareAlike 4.0 International License.
+
+This product includes GeoLite2 data created by MaxMind, available from http://www.maxmind.com.
