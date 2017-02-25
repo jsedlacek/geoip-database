@@ -2,8 +2,7 @@ language: node_js
 node_js:
 - '7'
 script:
-- npm i
-- make test
+- make publish
 deploy:
   provider: npm
   email: sedlacek.jakub@gmail.com
