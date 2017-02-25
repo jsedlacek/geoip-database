@@ -11,6 +11,7 @@ clean:
 release:
 	npm version patch
 	git push origin head --tag
+.PHONY: release
 
 %.mmdb.gz:
 	wget http://geolite.maxmind.com/download/geoip/database/$@
