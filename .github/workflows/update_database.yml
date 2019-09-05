@@ -1,0 +1,21 @@
+name: Update database
+
+on: [scheduled(0 0 * * *)]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+      
+    - name: download
+      run: |
+        yarn install
+        make update
+        make test
+      env:
+        CI: true
