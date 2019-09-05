@@ -22,7 +22,6 @@ jobs:
     - name: publish
       run: |
         bash commit_database.sh
-        npm publish
       env:
         CI: true
         NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
