@@ -1,5 +1,5 @@
 # geoip-database
-[![Build Status](https://travis-ci.org/jsedlacek/geoip-database.svg?branch=master)](https://travis-ci.org/jsedlacek/geoip-database)
+[![Build Status](https://github.com/jsedlacek/geoip-database/workflows/Node%20CI/badge.svg)](https://github.com/jsedlacek/geoip-database/actions)
 
 GeoLite2 databases packaged for npm. Contains GeoLite2-City.mmdb and GeoLite2-Country.mmdb files.
 
