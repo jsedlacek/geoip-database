@@ -14,16 +14,18 @@ jobs:
       with:
         node-version: '10.x'
       
+    - name: install
+      run: yarn install
+      env:
+        NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
     - name: download
-      run: |
-        yarn install
-        make update
-        make test
+      run: make update
+    - name: test
+      run: make test
     - name: publish
       run: |
         bash commit_database.sh
       env:
-        CI: true
         NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
