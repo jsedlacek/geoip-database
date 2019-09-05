@@ -19,11 +19,11 @@ jobs:
         yarn install
         make update
         make test
-    - name: publish-git
+    - name: publish
       run: |
         bash commit_database.sh
       env:
         CI: true
-        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
