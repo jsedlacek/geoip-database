@@ -4,6 +4,7 @@ if [[ `git status --porcelain` ]]; then
   npm version patch
   git push origin HEAD:master
   git push --tag
+  npm publish
 else
   echo 'no changes'
 fi

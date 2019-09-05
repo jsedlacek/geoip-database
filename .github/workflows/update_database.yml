@@ -2,7 +2,7 @@ name: Update database
 
 on:
   schedule:
-  - cron: 0 0 * * *
+  - cron: "* * * * *"
 
 jobs:
   build:
@@ -19,5 +19,6 @@ jobs:
         yarn install
         make update
         make test
+        sh commit_database.sh
       env:
         CI: true
