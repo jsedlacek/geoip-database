@@ -19,6 +19,6 @@ jobs:
         yarn install
         make update
         make test
-        sh commit_database.sh
+        bash commit_database.sh
       env:
         CI: true
