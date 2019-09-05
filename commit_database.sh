@@ -1,5 +1,5 @@
-git config user.email "SatisMeter CI"
-git config user.name "support@satismeter.com"
+git config user.email "sedlacek.jakub@gmail.com"
+git config user.name "CI"
 
 
 if [[ `git status --porcelain` ]]; then
