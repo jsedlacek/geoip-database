@@ -19,6 +19,8 @@ jobs:
         yarn install
         make update
         make test
+    - name: publish-git
+      run: |
         bash commit_database.sh
       env:
         CI: true
