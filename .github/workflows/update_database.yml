@@ -22,3 +22,4 @@ jobs:
         bash commit_database.sh
       env:
         CI: true
+        NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
