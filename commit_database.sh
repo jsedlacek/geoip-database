@@ -1,5 +1,5 @@
-git config user.email "sedlacek.jakub@gmail.com"
-git config user.name "CI"
+git config --global user.email "sedlacek.jakub@gmail.com"
+git config --global user.name "CI"
 
 
 if [[ `git status --porcelain` ]]; then
