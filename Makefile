@@ -18,7 +18,7 @@ test:
 .PHONY: test
 
 %.mmdb.gz:
-	wget http://geolite.maxmind.com/download/geoip/database/$@
+	wget "https://download.maxmind.com/app/geoip_download?edition_id=$*&suffix=tar.gz&license_key=$(GEOIP_LICENSE_KEY)"
 
 %.mmdb: %.mmdb.gz
 	gzip -d $<
