@@ -20,6 +20,8 @@ jobs:
         NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
     - name: download
       run: make update
+      env:
+        GEOIP_LICENSE_KEY: ${{ secrets.GEOIP_LICENSE_KEY }}
     - name: test
       run: make test
     - name: publish
